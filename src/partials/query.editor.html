@@ -1,0 +1,30 @@
+<query-editor-row query-ctrl="ctrl" class="tsv-datasource-query-row" has-text-edit-mode="true">
+  <div class="gf-form-inline">
+    <label class="gf-form-label width-7">Endpoint</label>
+    <div class="gf-form max-width-26">
+      <input type="text"
+             class="gf-form-input input-xlarge"
+             ng-model="ctrl.target.url"
+             placeholder="http://my.server.com/files/data.tsv" ng-pattern="/^(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/"/>
+    </div>
+    <label class="gf-form-label width-7">Metric name</label>
+    <div class="gf-form max-width-26">
+      <input type="text" class="gf-form-input input-xlarge" ng-model="ctrl.target.name" placeholder="Metric1"/>
+    </div>
+  </div>
+  <div class="gf-form-inline">
+    <label class="gf-form-label width-8">Timestamp col</label>
+    <div class="gf-form max-width-26">
+      <input type="text" class="gf-form-input input-xlarge" ng-model="ctrl.target.timecol" placeholder="Column name or Column number"/>
+    </div>
+    <label class="gf-form-label width-6">Value col</label>
+    <div class="gf-form max-width-26">
+      <input type="text" class="gf-form-input input-xlarge" ng-model="ctrl.target.valuecol" placeholder="Column name or Column number"/>
+    </div>
+  </div>
+  <div class="gf-form-inline">
+    <div class="gf-form">
+      <editor-checkbox text="Has Headings:" model="ctrl.target.hasheadings"/>
+    </div>
+  </div>
+</query-editor-row>

@@ -1,0 +1,28 @@
+{
+  "type": "datasource",
+  "name": "TSV",
+  "id": "grafana-tsv-datasource",
+
+  "partials": {
+    "config": "public/app/plugins/datasource/tsv/partials/config.html"
+  },
+
+  "metrics": true,
+
+  "info": {
+    "description": "TSV datasource plugin",
+    "author": {
+      "name": "addshore"
+    },
+    "links": [
+      {"name": "GitHub", "url": "https://github.com/addshore/grafana-tsv-datasource"}
+    ],
+    "version": "0.1.0",
+    "updated": "2016-02-15"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}
